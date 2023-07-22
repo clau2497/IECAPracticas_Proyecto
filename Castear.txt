@@ -1,0 +1,17 @@
+public class MyClass {
+    public static void main(String args[]) {
+      int numero=10;
+      double decimal =numero;
+     System.out.println(numero);
+     System.out.println(decimal);
+      
+      
+      
+      double decimal = 3.14;
+      int numero =(int) decimal;
+       System.out.println(numero);
+     System.out.println(decimal);
+
+     
+    }
+}

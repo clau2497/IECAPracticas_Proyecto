@@ -1,0 +1,112 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Iniciar_sesion">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+    />
+    <TextView
+        android:id="@+id/idTVHeader"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:padding="5dp"
+        android:text="Registro"
+        android:textAlignment="center"
+        android:textColor="@color/purple_700"
+        android:textSize="18sp" />
+    <EditText
+        android:id="@+id/idNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idTVHeader"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Nombre(s)"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/idApellidoPaterno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idNombre"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Apellido paterno"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/idApellidoMaterno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idApellidoPaterno"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Apellido materno"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/idCurp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idApellidoMaterno"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="CURP"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/idCorreo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idCurp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Correo"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/idContraseña"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idCorreo"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Contraseña"
+        android:inputType="textPassword" />
+    <EditText
+        android:id="@+id/idContraseña2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/idContraseña"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:hint="Repite la contraseña"
+        android:inputType="textPassword" />
+
+    <!--button to register our new user-->
+    <Button
+        android:id="@+id/idBtnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/idContraseña2"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:text="Registrar"
+        android:textAllCaps="false" />
+
+</RelativeLayout>

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "235634369723",
+    "project_id": "ieca-96146",
+    "storage_bucket": "ieca-96146.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:235634369723:android:d5517f5556ec1451ae359e",
+        "android_client_info": {
+          "package_name": "com.example.iecefirebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "235634369723-4c51icagbt2lqanbq3009p4qjgd3u1qa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDEvz9zHXKP7DTRltGhpp3GsSUrfDpCNY4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "235634369723-4c51icagbt2lqanbq3009p4qjgd3u1qa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

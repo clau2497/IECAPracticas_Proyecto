@@ -1,0 +1,16 @@
+fun getSeasons(){
+        val reference = database.getReference("seasons")
+
+        reference.addListenerForSingleValueEvent(object : ValueEventListener {
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+                for (seasonSnapshot in dataSnapshot.children){
+                    val season = seasonSnapshot.getValue(Seasons::class.java)
+                    Toast.makeText(this@MainActivity, season?.name + ": " + season?.description, Toast.LENGTH_LONG).show()
+                }
+            }
+
+            override fun onCancelled(databaseError : DatabaseError){
+                println("Error al leer los datos ${databaseError.message}")
+            }
+        })
+    }
