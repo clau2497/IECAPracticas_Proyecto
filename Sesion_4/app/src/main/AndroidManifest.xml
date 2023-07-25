@@ -1,4 +1,4 @@
-<<<<<<< Original<?xml version="1.0" encoding="utf-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?><manifest xmlns:android="http://schemas.android.com/apk/res/android"
 xmlns:tools="http://schemas.android.com/tools">
 
 <application
@@ -14,11 +14,9 @@ xmlns:tools="http://schemas.android.com/tools">
     <activity
         android:name=".ActivityVacio"
         android:exported="false" />
+
     <activity
-        android:name=""
-        android:exported="false" />
-    <activity
-        android:name=".ViewPagerAdapter"
+        android:name=".Formulario"
         android:exported="false"
         android:label="@string/title_activity_view_pager_adapter"
         android:theme="@style/Theme.Sesion_4" />
@@ -33,14 +31,5 @@ xmlns:tools="http://schemas.android.com/tools">
     </activity>
 </application>
 
-</manifest>=======
+</manifest>
 
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
-<application>
-    <activity
-        android:name="com.example.sesion_4.EscrituraDeArchivo"
-        android:exported="false"
-
-        />
-</application>
-</manifest>>>>>>>> Added

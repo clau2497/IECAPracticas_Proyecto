@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".Login">
 
-
     <TextView
         android:id="@+id/idTVHeader"
         android:layout_width="match_parent"
@@ -28,7 +27,8 @@
         android:layout_marginTop="50dp"
         android:layout_marginEnd="10dp"
         android:hint="Usuario"
-        android:inputType="textEmailAddress" />
+        android:inputType="textEmailAddress"
+        android:text="claudiabarajas76@gmail.com"/>
 
 
     <EditText
@@ -40,7 +40,8 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
         android:hint="Contraseña"
-        android:inputType="textPassword" />
+        android:inputType="textPassword"
+        android:text="123456"/>
     <Button
         android:id="@+id/idBtnLogin"
         android:layout_width="match_parent"

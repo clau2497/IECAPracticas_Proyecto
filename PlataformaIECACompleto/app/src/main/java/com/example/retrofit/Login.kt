@@ -1,15 +1,16 @@
 package com.example.retrofit
 
+import android.app.Activity
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
-import okhttp3.Call
-import okhttp3.Response
-import javax.security.auth.callback.Callback
+import retrofit2.Response
+import retrofit2.Call
+import retrofit2.Callback
 
-class Login : AppCompatActivity() {
+class Login : Activity() {
 
     lateinit var btnLogin : Button
     lateinit var etEmail: EditText
@@ -27,7 +28,7 @@ class Login : AppCompatActivity() {
             val apiService = ApiClient.getClient()
 
             val body : LoginRequest = LoginRequest(etEmail.text.toString(), etPassword.text.toString())
-
+            println("antes")
             val call = apiService.login(body)
             call.enqueue(object : Callback<LoginResponse> {
                 override fun onResponse(
@@ -35,8 +36,10 @@ class Login : AppCompatActivity() {
                     response : Response<LoginResponse>
                 ){
                     if(response.isSuccessful){
+
                         val loginResponse = response.body()
-                        tvHeader.text = "Bienvenido" + loginResponse?.name
+                        println("loginResponse" + response.body())
+                        //tvHeader.text = "Bienvenido" + loginResponse?.name
                         Toast.makeText(applicationContext, "Todo ok" , Toast.LENGTH_LONG).show()
                     }else {
                         Toast.makeText(applicationContext, "Error ok" , Toast.LENGTH_LONG).show()
@@ -44,6 +47,7 @@ class Login : AppCompatActivity() {
                 }
 
                 override fun onFailure(call: Call<LoginResponse> , t: Throwable){
+                    println("status code " + t.message)
                     Toast.makeText(applicationContext, "Error de red" , Toast.LENGTH_LONG).show()
 
                 }

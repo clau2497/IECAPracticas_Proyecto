@@ -8,6 +8,7 @@ object ApiClient {
     private var retrofit: Retrofit? = null
 
     fun getClient(): ApiService {
+        println("nada")
         if (retrofit == null) {
             retrofit = Retrofit.Builder()
                 .baseUrl(BASE_URL)
