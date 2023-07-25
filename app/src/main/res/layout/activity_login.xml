@@ -19,7 +19,7 @@
         android:textSize="18sp" />
 
     <EditText
-        android:id="@+id/usuario"
+        android:id="@+id/idEdtUserName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/idTVHeader"
@@ -32,10 +32,10 @@
 
 
     <EditText
-        android:id="@+id/contraseña"
+        android:id="@+id/idEdtPassword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/usuario"
+        android:layout_below="@id/idEdtUserName"
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
@@ -43,10 +43,10 @@
         android:inputType="textPassword"
         android:text="123456"/>
     <Button
-        android:id="@+id/boton"
+        android:id="@+id/idBtnLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/contraseña"
+        android:layout_below="@id/idEdtPassword"
         android:layout_marginStart="10dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="10dp"
